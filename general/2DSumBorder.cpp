@@ -42,18 +42,18 @@ int sumBorderArray(int arr[10][10], int col, int row) {
 
     // Cach 1:
     for(int i=0; i<row; i++) {
-        for(int j=0; j<col; j++) {
-            if(i == 0 || j == 0 || i == row-1 || j == col-1) {
-            S+= arr[i][j];
-            }
-        }
+        S+= arr[0][i] + arr[col-1][i];
+    }
+    for(int i=1; i<col-1; i++) {
+        S+= arr[i][0] + arr[i][row-1];
     }
     // Cach 2:
     // for(int i=0; i<row; i++) {
-    //     S+= arr[0][i] + arr[col-1][i];
-    // }
-    // for(int i=1; i<col-1; i++) {
-    //     S+= arr[i][0] + arr[i][row-1];
+    //     for(int j=0; j<col; j++) {
+    //         if(i == 0 || j == 0 || i == row-1 || j == col-1) {
+    //         S+= arr[i][j];
+    //         }
+    //     }
     // }
 
     return S;
