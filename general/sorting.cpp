@@ -8,7 +8,7 @@ void Sort(auto a[], auto n);
 
 
 int main() {
-    double a[] = {19.7, 8.69, -12.45, -3.125, 4.889, 17.1125};
+    double a[] = {9.7, 8.69, -12.45, -3.125, 4.889, 17.1125};
     int n = sizeof(a)/sizeof(a[0]);
 
     Sort(a, n);
@@ -31,7 +31,7 @@ void Sort(auto a[], auto n) {
         for(int j = i + 1; j < n; j++ ) {
             if (a[i] > a[j]) {
             Swap(a[i], a[j]);
-            }
+            }   
         }
     }
 }
