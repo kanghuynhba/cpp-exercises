@@ -31,7 +31,7 @@ int largestColumn(int arr[20][20], int n) {
       for(int j=0; j<n; j++) {
          s+= arr[j][i];
       }
-      if(largest <= s) {
+      if(largest < s) {
          largest = s;
          k++;
       }
