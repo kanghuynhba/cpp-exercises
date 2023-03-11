@@ -33,7 +33,7 @@ int main() {
     delete[] b; // delele[] để xóa hết tâp hợp phần tử của vùng nhớ b  
 
     // Gán vùng nhớ mới cho con trỏ b
-    b = newArr; // Con trỏ b được gán số vùng nhớ của con trỏ newArr là 4k
+    b = newArr; // Con trỏ b được gán số vùng nhớ của con trỏ newArr là 4
 
     cout << "Cac phan tu sau khi them:" << endl;
     for(int i=0; i<4; i++) {

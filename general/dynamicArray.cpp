@@ -11,7 +11,7 @@ int main() {
     
     if(n>0) {
         arrayOut(b, n);
-        delete[] b; // Giải phóng bộ nh
+        delete[] b; // Giải phóng bộ nhớ
     }
 
     return 1;
