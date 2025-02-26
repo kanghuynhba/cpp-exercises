@@ -3,18 +3,18 @@
 using namespace std;
 
 int sum2DArray(int arr[10][10], int col, int row);
-
 int main() {
     int row, col;
-    int arr[10][10];
+    int arr[10][10]
 
     cout << "column: ";
     cin >> col;
     cout << "row: ";
-    cin >> row; 
 
-    // Nhap mang
-    cout << "Nhap mang: " << endl;
+    cin >> row;
+
+    // nhap mang
+    cout << "nhap mang: " << endl;
     for(int i=0; i<col; i++) {
         for(int j=0; j<row; j++) {
             cin >> arr[i][j];

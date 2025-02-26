@@ -34,17 +34,12 @@ int main() {
 
 void addAlternativeArr2ToArr1(int arr1[], int &k, int arr2[], int h) {
         int x= 1;
-
         for(int i=0; i<h; i++) {
-
-        for(int j=k; j>x; j--) {
-            arr1[j]= arr1[j-1];
-        };
-
-        arr1[x] = arr2[i];
-
-        (k>x) ? x+=2 : x++;
-        
-        k++;
+            for(int j=k; j>x; j--) {
+                arr1[j]= arr1[j-1];
+            }
+            arr1[x] = arr2[i];
+            (k>x) ? x+=2 : x++;
+            k++;
         }
 }

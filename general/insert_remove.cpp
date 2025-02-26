@@ -21,7 +21,7 @@ int main() {
     cin >> k;
 
     Remove(a, n, k);
-    Insert(a, n, x, k);
+    // Insert(a, n, x, k);
 
     cout << "Mang sau khi them: ";
     for(int i=0; i<n; i++) {

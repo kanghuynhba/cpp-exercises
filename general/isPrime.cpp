@@ -11,7 +11,9 @@ int main() {
     cout << "n= ";
     cin >> n;
 
-    // isPrime(n);
+    if(isPrime(n)) {
+        cout << "True" << endl;
+    }
 
 
     cout << sumPrime(n);
@@ -27,19 +29,12 @@ bool isPrime(int n) {
     }
     return true;    
 }
-// int sumPrime(int n) {
-//     int s=0;
-//     for(int i=2; i<=n; i++) {
-//         if(isPrime(i)) {
-//             s += i;
-//         }
-//     }
-//     return s;
-// }
 int sumPrime(int n) {
     int s=0;
-    if(isPrime(n)) {
-    return s + sumPrime(n-1);
-    };
-    return s + sumPrime(n-1);
+    for(int i=2; i<=n; i++) {
+        if(isPrime(i)) {
+            s += i;
+        }
+    }
+    return s;
 }

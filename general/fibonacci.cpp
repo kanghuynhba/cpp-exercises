@@ -20,7 +20,7 @@ int Fib(int n) {
         return n;
     };
     a = 0; b = 1;
-    for(k = 2; k <= n + 2; k++) {
+    for(k = 2; k < n + 2; k++) {
         c = a + b;
         a = b;
         b = c;
